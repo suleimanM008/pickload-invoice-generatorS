@@ -1,0 +1,9 @@
+
+services:
+  - type: web
+    name: pickload-invoice
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars: []
