@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice Generator</title>
+</head>
+<body>
+    <h2>Pickload Movers Invoice Generator</h2>
+    <form action="/generate" method="post">
+        <label>Client Name:</label><br>
+        <input type="text" name="client_name" required><br><br>
+        <label>Amount per Container (KES):</label><br>
+        <input type="number" name="amount_per_container" required><br><br>
+        <label>Container Numbers (one per line):</label><br>
+        <textarea name="containers" rows="10" cols="30" required></textarea><br><br>
+        <button type="submit">Generate Invoice</button>
+    </form>
+</body>
+</html>
